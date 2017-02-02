@@ -1,5 +1,6 @@
 package com.mainbox.fiscaluno.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,6 +18,7 @@ import android.view.MenuItem;
 
 import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.view.ViewPagerAdapter;
+import com.mainbox.fiscaluno.view.cadastro.CadastroInstituicaoActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -115,7 +117,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
+            startActivity(new Intent(MainActivity.this, CadastroInstituicaoActivity.class));
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {

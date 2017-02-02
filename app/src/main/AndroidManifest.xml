@@ -18,6 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.cadastro.CadastroNomeActivity" />
+        <activity android:name=".view.cadastro.CadastroInstituicaoActivity" />
+        <activity android:name=".view.cadastro.CadastroPontosPositivosActivity" />
+        <activity android:name=".view.cadastro.CadastroPontosNegativosActivity" />
+        <activity android:name=".view.cadastro.AvaliacoesActivity" />
+        <activity android:name=".view.cadastro.ConselhosActivity" />
+        <activity android:name=".view.cadastro.AvaliacaoGeralActivity"></activity>
     </application>
 
 </manifest>

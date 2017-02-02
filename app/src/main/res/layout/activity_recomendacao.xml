@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mainbox.fiscaluno.view.cadastro.CadastroPontosPositivosActivity">
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:text="Nome da Instituição"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#181818"
+        />
+
+   <TextView
+       android:layout_margin="@dimen/activity_vertical_margin"
+       android:gravity="center"
+       android:text="Nesta instituição como você avalia:"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="18sp"
+        android:text="Cultura da instituição"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="18sp"
+        android:text="Cultura da instituição"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:onClick="onNextClick"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/continuar"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
