@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.mainbox.fiscaluno.R;
-import com.mainbox.fiscaluno.view.MainActivity;
+import com.mainbox.fiscaluno.view.main.MainActivity;
 
 public class ConselhosActivity extends AppCompatActivity {
 

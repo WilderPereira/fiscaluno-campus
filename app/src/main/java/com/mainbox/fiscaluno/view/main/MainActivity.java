@@ -1,4 +1,4 @@
-package com.mainbox.fiscaluno.view;
+package com.mainbox.fiscaluno.view.main;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,8 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.mainbox.fiscaluno.R;
-import com.mainbox.fiscaluno.view.ViewPagerAdapter;
 import com.mainbox.fiscaluno.view.cadastro.CadastroInstituicaoActivity;
+import com.mainbox.fiscaluno.view.main.ranking.RankingFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
