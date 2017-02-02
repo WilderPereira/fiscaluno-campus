@@ -25,6 +25,7 @@
         <activity android:name=".view.cadastro.AvaliacoesActivity" />
         <activity android:name=".view.cadastro.ConselhosActivity" />
         <activity android:name=".view.cadastro.AvaliacaoGeralActivity"/>
+        <activity android:name=".view.main.pesquisa.PesquisaPrincipalActivity"/>
     </application>
 
 </manifest>
