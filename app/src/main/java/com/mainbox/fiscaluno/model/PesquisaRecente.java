@@ -1,8 +1,10 @@
 package com.mainbox.fiscaluno.model;
 
-import java.io.Serializable;
+/**
+ * Created by Wilder on 02/02/17.
+ */
 
-public class PesquisaRecente implements Serializable {
+public class PesquisaRecente {
 
     private Integer codigo;
     private String busca;

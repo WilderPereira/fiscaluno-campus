@@ -1,13 +1,15 @@
 package com.mainbox.fiscaluno.view.main.pesquisa;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
+import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.model.PesquisaRecente;
 
 import java.util.ArrayList;
@@ -17,30 +19,33 @@ import java.util.List;
  * Created by Admin on 02/02/2017.
  */
 
-public class PesquisaPrincipalActivity extends AppCompatActivity {
+public class PesquisaPrincipalFragment extends Fragment {
 
     private List<PesquisaRecente> pesquisaRecentes;
     private RecyclerView mRecycler;
     private RecyclerView.LayoutManager mLayoutManager;
 
+    public PesquisaPrincipalFragment() {
+    }
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pesquisa);
+        View view = inflater.inflate(R.layout.activity_pesquisa, container, false);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        mLayoutManager = new LinearLayoutManager(getContext());
 
-        mLayoutManager = new LinearLayoutManager(this);
-
-        mRecycler = (RecyclerView) findViewById(R.id.rv_aplicativo);
+        mRecycler = (RecyclerView) view.findViewById(R.id.frm_pesquisa_recente);
         mRecycler.setHasFixedSize(true);
         mRecycler.setLayoutManager(mLayoutManager);
 
         gerarValor();
 
-        PesquisaRecenteAdapter adapter = new PesquisaRecenteAdapter(PesquisaPrincipalActivity.this, pesquisaRecentes);
+        PesquisaRecenteAdapter adapter = new PesquisaRecenteAdapter(getContext(), pesquisaRecentes);
         mRecycler.setAdapter(adapter);
+
+        return view;
     }
 
     private void gerarValor() {
@@ -62,7 +67,6 @@ public class PesquisaPrincipalActivity extends AppCompatActivity {
 
         switch (id) {
             case android.R.id.home:
-                onBackPressed();
                 return true;
         }
 

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.model.PesquisaRecente;
 
 import java.util.List;

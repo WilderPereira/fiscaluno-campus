@@ -5,6 +5,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.Button;
 
+import com.mainbox.fiscaluno.R;
+
 /**
  * Created by Admin on 02/02/2017.
  */

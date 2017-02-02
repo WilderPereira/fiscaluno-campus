@@ -15,5 +15,6 @@
     <string name="busca">Escola ou Palavra Chave</string>
     <string name="localizacao">Localização</string>
     <string name="buscar">Buscar</string>
+    <string name="pesquisa">Pesquisa</string>
 
 </resources>

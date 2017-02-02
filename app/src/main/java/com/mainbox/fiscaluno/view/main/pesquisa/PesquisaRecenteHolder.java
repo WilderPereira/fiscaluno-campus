@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.model.PesquisaRecente;
 
 /**
@@ -23,7 +24,7 @@ public class PesquisaRecenteHolder extends RecyclerView.ViewHolder {
     }
 
     public void setElements(PesquisaRecente pesquisaRecente) {
-        tv_card_nome.setText(pesquisaRecente.getBusnca());
+        tv_card_nome.setText(pesquisaRecente.getBusca());
         tv_card_local.setText(pesquisaRecente.getLocal());
     }
 

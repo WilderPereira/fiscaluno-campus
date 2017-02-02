@@ -8,8 +8,9 @@ import java.util.List;
 
 public class Instituicao {
     String nome;
-    Float mediaAvaliacao;
+    AvaliacaoGeral avaliacao;
     List<AvaliacaoProContra> avaliacoes;
+
 
     public String getNome() {
         return nome;
@@ -19,12 +20,12 @@ public class Instituicao {
         this.nome = nome;
     }
 
-    public Float getMediaAvaliacao() {
-        return mediaAvaliacao;
+    public AvaliacaoGeral getAvaliacao() {
+        return avaliacao;
     }
 
-    public void setMediaAvaliacao(Float mediaAvaliacao) {
-        this.mediaAvaliacao = mediaAvaliacao;
+    public void setAvaliacao(AvaliacaoGeral avaliacao) {
+        this.avaliacao = avaliacao;
     }
 
     public List<AvaliacaoProContra> getAvaliacoes() {
