@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/padding_view">
+
+    <EditText
+        android:id="@+id/frm_busca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/drawable_padding_view"
+        android:drawableStart="@drawable/ic_search_white"
+        android:hint="@string/busca"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/frm_localizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frm_busca"
+        android:drawablePadding="@dimen/drawable_padding_view"
+        android:drawableStart="@drawable/ic_location_white"
+        android:hint="@string/localizacao"
+        android:textColorHint="@android:color/white" />
+
+    <com.mainbox.fiscaluno.view.custom.ButtonRadius
+        android:id="@+id/frm_pesquisar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frm_localizacao"
+        android:text="@string/buscar" />
+
+
+</RelativeLayout>
