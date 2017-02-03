@@ -49,11 +49,11 @@ public class PesquisaInstituicaoActivity extends AppCompatActivity {
 
     private void gerarValor() {
         instituicaos = new ArrayList<>();
-
-        for (int i = 1; i <= 11; i++) {
+        String[] arr = {"Escola", "Faculdade"};
+        for (int i = 0; i <= 1; i++) {
             Instituicao instituicao = new Instituicao();
             instituicao.setCodigo(i);
-            instituicao.setNome("Escola " + i);
+            instituicao.setNome(arr[i]+" ABC");
 
             instituicaos.add(instituicao);
         }

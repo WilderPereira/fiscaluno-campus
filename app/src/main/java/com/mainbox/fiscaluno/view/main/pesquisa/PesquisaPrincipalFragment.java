@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.mainbox.fiscaluno.R;
+import com.mainbox.fiscaluno.model.Instituicao;
 import com.mainbox.fiscaluno.model.PesquisaRecente;
 import com.mainbox.fiscaluno.view.custom.ButtonRadius;
 import com.mainbox.fiscaluno.view.main.pesquisaEscola.PesquisaInstituicaoActivity;
@@ -94,12 +95,13 @@ public class PesquisaPrincipalFragment extends Fragment {
 
     private void gerarValor() {
         pesquisaRecentes = new ArrayList<>();
+        String[] arr = {"Escola", "Faculdade"};
 
-        for (int i = 1; i <= 11; i++) {
+        for (int i = 0; i <= 1; i++) {
             PesquisaRecente pesquisaRecente = new PesquisaRecente();
             pesquisaRecente.setCodigo(i);
-            pesquisaRecente.setBusca("Nome " + i);
-            pesquisaRecente.setLocal("Endereço " + i);
+            pesquisaRecente.setBusca(arr[i]+" ABC");
+            pesquisaRecente.setLocal("SP");
 
             pesquisaRecentes.add(pesquisaRecente);
         }

@@ -1,194 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:id="@+id/scrollVieww"
     tools:context="com.mainbox.fiscaluno.view.instituicao.InstituicaoActivity">
-
     <LinearLayout
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:orientation="horizontal"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:tint="#808080"
-            android:id="@+id/iv_conselhos_icone"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_location_city_black_24dp"
-            tools:ignore="ContentDescription"/>
-        <TextView
-            android:id="@+id/nomeInstituicao"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_gravity="center"
-            android:gravity="left"
-            android:textSize="20sp"
-            android:text="Nome da Instituição"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#181818"
-        />
-
-    <LinearLayout
-        android:gravity="center_vertical"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:tint="#808080"
-            android:src="@drawable/ic_smile"
-            android:layout_width="18dp"
-            android:layout_height="18dp" />
-        <TextView
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Satisfação dos Estudantes"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
         <LinearLayout
-            android:gravity="center"
-            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <me.zhanghai.android.materialratingbar.MaterialRatingBar
-                android:rating="4.2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
+            <ImageView
+                android:tint="#808080"
+                android:id="@+id/iv_conselhos_icone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_location_city_black_24dp"
+                tools:ignore="ContentDescription"/>
             <TextView
+                android:id="@+id/nomeInstituicao"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:text="Escola ABC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#181818"
+            />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="#808080"
+                android:src="@drawable/ic_smile"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6 Avaliações"/>
+                android:text="Satisfação dos Estudantes"/>
         </LinearLayout>
-        <TextView
-            android:layout_marginLeft="8dp"
-            android:textSize="24sp"
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/media_tv"
-            android:text="4,2"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#181818"
-        />
-
-    <LinearLayout
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:gravity="center_vertical"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:weightSum="10"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:gravity="right"
-            android:text="Infraestrutura"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"/>
-
-        <LinearLayout
-            android:layout_marginLeft="8dp"
-            android:layout_weight="5"
-            android:layout_width="0dp"
             android:layout_height="wrap_content">
-            <me.zhanghai.android.materialratingbar.MaterialRatingBar
-                android:rating="5.0"
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:rating="4.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Avaliações"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:textSize="24sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
+                android:id="@+id/media_tv"
+                android:text="4,2"/>
         </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="8dp"
-        android:gravity="center_vertical"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:weightSum="10"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:gravity="right"
-            android:text="Segurança"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"/>
         <LinearLayout
-            android:layout_marginLeft="8dp"
-            android:layout_weight="5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <me.zhanghai.android.materialratingbar.MaterialRatingBar
-                android:rating="4.5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:gravity="center_vertical"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:weightSum="10"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:gravity="right"
-            android:text="Aulas"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"/>
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#181818"
+            />
+
         <LinearLayout
-            android:layout_marginLeft="8dp"
-            android:layout_weight="5"
-            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <me.zhanghai.android.materialratingbar.MaterialRatingBar
-                app:mrb_progressBackgroundTintMode="src_in"
-                android:rating="2.5"
-                app:mrb_progressTint="@color/colorAccent"
-                android:layout_width="wrap_content"
+
+            <TextView
+                android:gravity="right"
+                android:text="Infraestrutura"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
+                android:layout_weight="5"/>
+
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:rating="3.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
+            </LinearLayout>
+
         </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="right"
+                android:text="Segurança"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:rating="4.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="right"
+                android:text="Aulas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    app:mrb_progressBackgroundTintMode="src_in"
+                    android:rating="2.5"
+                    app:mrb_progressTint="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#181818"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/avaliacoesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#181818"
-        />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/avaliacoesRecycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

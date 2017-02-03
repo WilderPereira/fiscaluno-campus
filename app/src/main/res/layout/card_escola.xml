@@ -14,7 +14,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorBackgroud"
         android:orientation="horizontal"
         android:padding="@dimen/drawable_padding_view">
 
@@ -23,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_school"
+            android:src="@drawable/ic_location_city_black_24dp"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -32,9 +31,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_weight="0.1"
-            android:textColor="@android:color/white"
-            android:textSize="17sp"
-            android:textStyle="bold" />
+            android:textSize="17sp" />
 
     </LinearLayout>
 
