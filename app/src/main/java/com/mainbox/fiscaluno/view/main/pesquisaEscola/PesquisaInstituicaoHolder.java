@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.model.Instituicao;
 import com.mainbox.fiscaluno.model.PesquisaRecente;
 

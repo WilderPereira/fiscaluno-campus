@@ -3,8 +3,10 @@ package com.mainbox.fiscaluno.view.main.pesquisaEscola;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.model.Instituicao;
 import com.mainbox.fiscaluno.model.PesquisaRecente;
 import com.mainbox.fiscaluno.view.main.pesquisa.PesquisaRecenteAdapter;
@@ -20,12 +22,11 @@ public class PesquisaInstituicaoActivity extends AppCompatActivity {
 
     private List<Instituicao> instituicaos;
     private RecyclerView mRecycler;
-    private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.id.activity_lista_escola);
+        setContentView(R.layout.activity_lista_escolas);
 
         Bundle bundle =  getIntent().getExtras();
         if(!bundle.isEmpty()) {
@@ -34,7 +35,7 @@ public class PesquisaInstituicaoActivity extends AppCompatActivity {
 
         mRecycler = (RecyclerView) findViewById(R.id.rv_lista_escola);
         mRecycler.setHasFixedSize(true);
-        mRecycler.setLayoutManager(mLayoutManager);
+        mRecycler.setLayoutManager(new LinearLayoutManager(getBaseContext()));
 
         gerarValor();
 

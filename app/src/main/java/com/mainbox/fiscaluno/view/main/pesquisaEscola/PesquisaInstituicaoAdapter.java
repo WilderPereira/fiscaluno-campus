@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.model.Instituicao;
 
 import java.util.List;
@@ -34,7 +35,7 @@ public class PesquisaInstituicaoAdapter extends RecyclerView.Adapter<PesquisaIns
     @Override
     public void onBindViewHolder(PesquisaInstituicaoHolder holder, int position) {
         Instituicao instituicao = instituicaos.get(position);
-        holder.setElements(instituicaos);
+        holder.setElements(instituicao);
     }
 
     @Override
