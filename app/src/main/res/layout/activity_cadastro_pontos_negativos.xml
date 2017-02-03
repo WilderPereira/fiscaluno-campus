@@ -11,18 +11,21 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp" />
+
         <TextView
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_gravity="center"
-            android:gravity="left"
+            android:gravity="start"
             android:textSize="20sp"
             android:text="Nome da Instituição"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -35,11 +38,13 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ic_sad"/>
+
         <TextView
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_gravity="center"
@@ -49,17 +54,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <android.support.design.widget.TextInputLayout
-        android:hint="Pontos Negativos"
+
+    <LinearLayout
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pontos Negativos"/>
+
+        <com.mainbox.fiscaluno.view.custom.EditTextBox
             android:lines="4"
             android:id="@+id/nomeInstituicao_tv"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
