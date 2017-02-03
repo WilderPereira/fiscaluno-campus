@@ -16,35 +16,13 @@
 
             <LinearLayout
                 android:layout_weight="5"
-                android:gravity="left"
-                android:orientation="horizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_margin="4dp"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:src="@drawable/ic_star"/>
-                <ImageView
-                    android:layout_margin="4dp"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:src="@drawable/ic_star"/>
-                <ImageView
-                    android:layout_margin="4dp"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:src="@drawable/ic_star"/>
-                <ImageView
-                    android:layout_margin="4dp"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:src="@drawable/ic_star"/>
-                <ImageView
-                    android:layout_margin="4dp"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:src="@drawable/ic_star"/>
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:rating="4.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
             </LinearLayout>
 
             <LinearLayout

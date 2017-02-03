@@ -136,8 +136,8 @@ public class MainActivity extends AppCompatActivity
 
     private void setupViewPager(final ViewPager viewPager){
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new RankingFragment(), getString(R.string.ranking));
         adapter.addFragment(new PesquisaPrincipalFragment(), getString(R.string.pesquisa));
+        adapter.addFragment(new RankingFragment(), getString(R.string.ranking));
         viewPager.setAdapter(adapter);
     }
 

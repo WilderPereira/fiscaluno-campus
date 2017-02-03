@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.mainbox.fiscaluno.R;
 
+import me.zhanghai.android.materialratingbar.MaterialRatingBar;
+
 public class AvaliacaoGeralActivity extends AppCompatActivity {
 
     @Override
@@ -17,5 +19,12 @@ public class AvaliacaoGeralActivity extends AppCompatActivity {
 
     public void onNextClick(View view) {
         startActivity(new Intent(AvaliacaoGeralActivity.this, CadastroPontosPositivosActivity.class));
+    }
+
+    public void rate(View view) {
+        MaterialRatingBar materialRatingBar = (MaterialRatingBar) findViewById(R.id.rated);
+        MaterialRatingBar materialRatingBarNotRated = (MaterialRatingBar) findViewById(R.id.notrated);
+        materialRatingBarNotRated.setVisibility(View.GONE);
+        materialRatingBar.setVisibility(View.VISIBLE);
     }
 }

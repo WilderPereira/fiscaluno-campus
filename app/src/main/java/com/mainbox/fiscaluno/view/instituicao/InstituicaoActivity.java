@@ -17,5 +17,7 @@ public class InstituicaoActivity extends AppCompatActivity {
 
         nomeInstituicaoTv = (TextView) findViewById(R.id.nomeInstituicao);
         mediaTv = (TextView) findViewById(R.id.media_tv);
+
+
     }
 }

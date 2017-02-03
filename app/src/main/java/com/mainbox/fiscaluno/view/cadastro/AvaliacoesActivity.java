@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.mainbox.fiscaluno.R;
 
+import me.zhanghai.android.materialratingbar.MaterialRatingBar;
+
 public class AvaliacoesActivity extends AppCompatActivity {
 
     @Override
@@ -17,5 +19,22 @@ public class AvaliacoesActivity extends AppCompatActivity {
 
     public void onNextClick(View view) {
         startActivity(new Intent(AvaliacoesActivity.this, ConselhosActivity.class));
+    }
+
+    public void rate(View view) {
+        MaterialRatingBar materialRatingBar = (MaterialRatingBar) findViewById(R.id.rated1);
+        MaterialRatingBar materialRatingBarNotRated = (MaterialRatingBar) findViewById(R.id.notrated1);
+        materialRatingBarNotRated.setVisibility(View.GONE);
+        materialRatingBar.setVisibility(View.VISIBLE);
+
+        MaterialRatingBar materialRatingBar2 = (MaterialRatingBar) findViewById(R.id.rated2);
+        MaterialRatingBar materialRatingBarNotRated2 = (MaterialRatingBar) findViewById(R.id.notrated2);
+        materialRatingBarNotRated2.setVisibility(View.GONE);
+        materialRatingBar2.setVisibility(View.VISIBLE);
+
+        MaterialRatingBar materialRatingBar3 = (MaterialRatingBar) findViewById(R.id.rated3);
+        MaterialRatingBar materialRatingBarNotRated3 = (MaterialRatingBar) findViewById(R.id.notrated3);
+        materialRatingBarNotRated3.setVisibility(View.GONE);
+        materialRatingBar3.setVisibility(View.VISIBLE);
     }
 }

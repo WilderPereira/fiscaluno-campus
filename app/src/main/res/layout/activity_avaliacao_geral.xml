@@ -42,38 +42,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="horizontal"
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/notrated"
+        android:onClick="rate"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_star"/>
-        <ImageView
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_star"/>
-        <ImageView
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_star"/>
-        <ImageView
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_star"/>
-        <ImageView
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_star"/>
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
 
-    </LinearLayout>
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/rated"
+        android:visibility="gone"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:rating="4.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
 
     <RelativeLayout
         android:layout_width="match_parent"

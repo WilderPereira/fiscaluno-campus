@@ -61,37 +61,11 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="horizontal"
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:rating="4.2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:background="@color/colorAccent"
-                    android:layout_margin="4dp"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp" />
-                <ImageView
-                    android:background="@color/colorAccent"
-                    android:layout_margin="4dp"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp" />
-                <ImageView
-                    android:background="@color/colorAccent"
-                    android:layout_margin="4dp"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp" />
-                <ImageView
-                    android:background="@color/colorAccent"
-                    android:layout_margin="4dp"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp" />
-                <ImageView
-                    android:background="@color/colorAccent"
-                    android:layout_margin="4dp"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp" />
-
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,43 +96,26 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:gravity="right"
             android:text="Infraestrutura"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="5"/>
+
         <LinearLayout
+            android:layout_marginLeft="8dp"
             android:layout_weight="5"
-            android:orientation="horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content">
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:rating="5.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
         </LinearLayout>
+
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="8dp"
@@ -176,35 +133,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"/>
         <LinearLayout
+            android:layout_marginLeft="8dp"
             android:layout_weight="5"
-            android:orientation="horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content">
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:rating="4.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -223,35 +160,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"/>
         <LinearLayout
+            android:layout_marginLeft="8dp"
             android:layout_weight="5"
-            android:orientation="horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content">
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp"/>
-            <ImageView
-                android:background="@color/colorAccent"
-                android:layout_margin="4dp"
-                android:layout_width="15dp"
-                android:layout_height="15dp" />
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                app:mrb_progressBackgroundTintMode="src_in"
+                android:rating="2.5"
+                app:mrb_progressTint="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
         </LinearLayout>
     </LinearLayout>
 
