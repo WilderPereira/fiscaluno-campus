@@ -13,10 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:id="@+id/iv_instituicao_icone"
+            android:tint="#808080"
+            android:id="@+id/iv_conselhos_icone"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_school"
+            android:src="@drawable/ic_location_city_black_24dp"
             tools:ignore="ContentDescription"/>
         <TextView
             android:id="@+id/nomeInstituicao"
@@ -43,9 +44,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:background="#000"
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
+            android:tint="#808080"
+            android:src="@drawable/ic_smile"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
         <TextView
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_width="wrap_content"

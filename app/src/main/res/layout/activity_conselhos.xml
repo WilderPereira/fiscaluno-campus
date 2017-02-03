@@ -12,10 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
+            android:tint="#808080"
             android:id="@+id/iv_conselhos_icone"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_school"
+            android:src="@drawable/ic_location_city_black_24dp"
             tools:ignore="ContentDescription"/>
         <TextView
             android:layout_marginRight="@dimen/activity_horizontal_margin"
@@ -52,24 +53,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <android.support.design.widget.TextInputLayout
-        android:hint="conselhos"
+   <TextView
+       android:layout_marginLeft="@dimen/activity_horizontal_margin"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Sugestões"/>
+    <com.mainbox.fiscaluno.view.custom.EditTextBox
         android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="left"
+        android:lines="4"
+        android:id="@+id/nomeInstituicao_tv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:lines="4"
-            android:id="@+id/nomeInstituicao_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
-
+        android:layout_height="wrap_content" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <Button
             android:onClick="onNextClick"
-            android:backgroundTint="@color/colorAccent"
+            android:textColor="#fff"
+            android:backgroundTint="@color/orange_button"
             android:text="@string/continuar"
             android:layout_margin="@dimen/activity_vertical_margin"
             android:layout_width="match_parent"

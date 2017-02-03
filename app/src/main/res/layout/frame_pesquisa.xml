@@ -6,6 +6,7 @@
     android:padding="@dimen/padding_view">
 
     <EditText
+        android:backgroundTint="#fff"
         android:id="@+id/frm_busca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +18,7 @@
         android:textColorHint="@android:color/white" />
 
     <EditText
+        android:backgroundTint="#fff"
         android:id="@+id/frm_localizacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

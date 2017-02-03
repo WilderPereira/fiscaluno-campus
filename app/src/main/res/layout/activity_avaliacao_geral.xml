@@ -12,10 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:id="@+id/iv_avaliacao_icone"
+            android:tint="#808080"
+            android:id="@+id/iv_conselhos_icone"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_school"
+            android:src="@drawable/ic_location_city_black_24dp"
             tools:ignore="ContentDescription"/>
         <TextView
             android:layout_marginRight="@dimen/activity_horizontal_margin"
@@ -71,6 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <Button
+            android:textColor="#fff"
             android:onClick="onNextClick"
             android:backgroundTint="@color/colorAccent"
             android:text="@string/continuar"
