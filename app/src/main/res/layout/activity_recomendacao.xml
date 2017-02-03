@@ -53,30 +53,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
 
     </LinearLayout>
 
@@ -94,30 +94,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
         <ImageView
-            android:background="@color/colorAccent"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_width="40dp"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"/>
 
     </LinearLayout>
 
