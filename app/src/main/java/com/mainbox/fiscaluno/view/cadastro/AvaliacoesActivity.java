@@ -26,12 +26,16 @@ public class AvaliacoesActivity extends AppCompatActivity {
         MaterialRatingBar materialRatingBarNotRated = (MaterialRatingBar) findViewById(R.id.notrated1);
         materialRatingBarNotRated.setVisibility(View.GONE);
         materialRatingBar.setVisibility(View.VISIBLE);
+    }
 
+    public void rate2(View view) {
         MaterialRatingBar materialRatingBar2 = (MaterialRatingBar) findViewById(R.id.rated2);
         MaterialRatingBar materialRatingBarNotRated2 = (MaterialRatingBar) findViewById(R.id.notrated2);
         materialRatingBarNotRated2.setVisibility(View.GONE);
         materialRatingBar2.setVisibility(View.VISIBLE);
+    }
 
+    public void rate3(View view) {
         MaterialRatingBar materialRatingBar3 = (MaterialRatingBar) findViewById(R.id.rated3);
         MaterialRatingBar materialRatingBarNotRated3 = (MaterialRatingBar) findViewById(R.id.notrated3);
         materialRatingBarNotRated3.setVisibility(View.GONE);

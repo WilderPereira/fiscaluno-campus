@@ -47,13 +47,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+    <LinearLayout
         android:onClick="rate"
-        android:id="@+id/notrated1"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
+        android:layout_height="wrap_content">
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/notrated1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
+    </LinearLayout>
 
     <me.zhanghai.android.materialratingbar.MaterialRatingBar
         android:id="@+id/rated1"
@@ -72,13 +77,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <me.zhanghai.android.materialratingbar.MaterialRatingBar
-        android:onClick="rate"
-        android:id="@+id/notrated2"
+    <LinearLayout
+        android:onClick="rate2"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
+        android:layout_height="wrap_content">
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/notrated2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
+    </LinearLayout>
+
 
     <me.zhanghai.android.materialratingbar.MaterialRatingBar
         android:id="@+id/rated2"
@@ -89,6 +100,7 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
 
+
     <TextView
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:textSize="18sp"
@@ -97,14 +109,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <me.zhanghai.android.materialratingbar.MaterialRatingBar
-        android:onClick="rate"
-        android:id="@+id/notrated3"
+    <LinearLayout
+        android:onClick="rate3"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
-
+        android:layout_height="wrap_content">
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/notrated3"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
+    </LinearLayout>
     <me.zhanghai.android.materialratingbar.MaterialRatingBar
         android:id="@+id/rated3"
         android:rating="4.0"
