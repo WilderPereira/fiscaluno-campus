@@ -31,6 +31,9 @@ public class InstituicaoActivity extends AppCompatActivity {
         AvaliacaoAdapter adapter = new AvaliacaoAdapter(gerarAvaliacaoProContra());
         recyclerView.setAdapter(adapter);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
     }
 
     private ArrayList<AvaliacaoProContra> gerarAvaliacaoProContra(){

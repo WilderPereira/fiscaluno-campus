@@ -28,6 +28,9 @@ public class PesquisaInstituicaoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_escolas);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         Bundle bundle =  getIntent().getExtras();
         if(!bundle.isEmpty()) {
             getSupportActionBar().setTitle(bundle.getString("Pesquisa"));
