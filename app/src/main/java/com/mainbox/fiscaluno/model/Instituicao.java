@@ -7,10 +7,28 @@ import java.util.List;
  */
 
 public class Instituicao {
-    String nome;
-    AvaliacaoGeral avaliacao;
-    List<AvaliacaoProContra> avaliacoes;
 
+    private Integer codigo;
+    private String logo;
+    private String nome;
+    private AvaliacaoGeral avaliacao;
+    private List<AvaliacaoProContra> avaliacoes;
+
+    public Integer getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
 
     public String getNome() {
         return nome;

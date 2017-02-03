@@ -5,8 +5,18 @@ package com.mainbox.fiscaluno.model;
  */
 
 public class AvaliacaoGeral {
-    String categoria;
-    Float media;
+
+    private Integer codigo;
+    private String categoria;
+    private Float media;
+
+    public Integer getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
+    }
 
     public String getCategoria() {
         return categoria;

@@ -1,5 +1,6 @@
 package com.mainbox.fiscaluno.view.main.pesquisa;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,9 +9,12 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.model.PesquisaRecente;
+import com.mainbox.fiscaluno.view.custom.ButtonRadius;
+import com.mainbox.fiscaluno.view.main.pesquisaEscola.PesquisaInstituicaoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,8 +29,9 @@ public class PesquisaPrincipalFragment extends Fragment {
     private RecyclerView mRecycler;
     private RecyclerView.LayoutManager mLayoutManager;
 
-    public PesquisaPrincipalFragment() {
-    }
+    private EditText frm_busca;
+    private EditText frm_localizacao;
+    private ButtonRadius frm_pesquisar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +40,10 @@ public class PesquisaPrincipalFragment extends Fragment {
         View view = inflater.inflate(R.layout.activity_pesquisa, container, false);
 
         mLayoutManager = new LinearLayoutManager(getContext());
+
+        frm_busca = (EditText) view.findViewById(R.id.frm_busca);
+        frm_localizacao = (EditText) view.findViewById(R.id.frm_localizacao);
+        frm_pesquisar = (ButtonRadius) view.findViewById(R.id.frm_pesquisar);
 
         mRecycler = (RecyclerView) view.findViewById(R.id.frm_pesquisa_recente);
         mRecycler.setHasFixedSize(true);
@@ -45,7 +54,38 @@ public class PesquisaPrincipalFragment extends Fragment {
         PesquisaRecenteAdapter adapter = new PesquisaRecenteAdapter(getContext(), pesquisaRecentes);
         mRecycler.setAdapter(adapter);
 
+        frm_pesquisar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(validacao()) {
+                    Intent intent = new Intent(getContext(), PesquisaInstituicaoActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("Pesquisa", frm_busca.getText().toString());
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                }
+
+            }
+        });
+
         return view;
+    }
+
+    private Boolean validacao() {
+        Boolean retorno = true;
+
+        if(frm_busca.getText().toString().isEmpty()) {
+            frm_busca.setError("Invalido");
+            retorno = false;
+        }
+
+        if(frm_localizacao.getText().toString().isEmpty()) {
+            frm_localizacao.setError("Invalido");
+            retorno = false;
+        }
+
+        return retorno;
     }
 
     private void gerarValor() {
