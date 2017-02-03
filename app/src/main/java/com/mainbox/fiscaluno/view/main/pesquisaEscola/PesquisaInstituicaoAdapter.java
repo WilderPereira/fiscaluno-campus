@@ -28,7 +28,7 @@ public class PesquisaInstituicaoAdapter extends RecyclerView.Adapter<PesquisaIns
     @Override
     public PesquisaInstituicaoHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.card_escola, parent, false);
-        PesquisaInstituicaoHolder viewHolder = new PesquisaInstituicaoHolder(view);
+        PesquisaInstituicaoHolder viewHolder = new PesquisaInstituicaoHolder(context, view, instituicaos);
         return viewHolder;
     }
 
