@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.mainbox.fiscaluno.R;
@@ -31,7 +32,7 @@ public class PesquisaPrincipalFragment extends Fragment {
 
     private EditText frm_busca;
     private EditText frm_localizacao;
-    private ButtonRadius frm_pesquisar;
+    private Button frm_pesquisar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,7 +44,7 @@ public class PesquisaPrincipalFragment extends Fragment {
 
         frm_busca = (EditText) view.findViewById(R.id.frm_busca);
         frm_localizacao = (EditText) view.findViewById(R.id.frm_localizacao);
-        frm_pesquisar = (ButtonRadius) view.findViewById(R.id.frm_pesquisar);
+        frm_pesquisar = (Button) view.findViewById(R.id.frm_pesquisar);
 
         mRecycler = (RecyclerView) view.findViewById(R.id.frm_pesquisa_recente);
         mRecycler.setHasFixedSize(true);
@@ -59,6 +60,9 @@ public class PesquisaPrincipalFragment extends Fragment {
             public void onClick(View view) {
 
                 if(validacao()) {
+                    frm_busca.setText("");
+                    frm_localizacao.setText("");
+
                     Intent intent = new Intent(getContext(), PesquisaInstituicaoActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putString("Pesquisa", frm_busca.getText().toString());
