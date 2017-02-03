@@ -5,10 +5,12 @@ package com.mainbox.fiscaluno.model;
  */
 
 public class AvaliacaoProContra {
-    String titulo;
-    String pros;
-    String contra;
-    String dias;
+
+    private Integer codigo;
+    private String titulo;
+    private String pros;
+    private String contra;
+    private String dias;
 
     public String getTitulo() {
         return titulo;
