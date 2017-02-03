@@ -36,7 +36,7 @@ public class RankingFragment extends Fragment {
 
         adapter = new SectionedRecyclerViewAdapter();
 
-        adapter.addSection(new RankingSection("Melhores Faculdades avaliadas", new ArrayList<>(Arrays.asList("Faculdade Impacta", "Fiap", "Uninove"))));
+        adapter.addSection(new RankingSection("Melhores Faculdades avaliadas", new ArrayList<>(Arrays.asList("Faculdade a", "Faculdade b", "Faculdade c"))));
         adapter.addSection(new RankingSection("Piores Faculdades avaliadas", new ArrayList<>(Arrays.asList("Faculdade x", "Faculdade y", "Faculdade z"))));
         adapter.addSection(new RankingSection("Melhores Escolas avaliadas", new ArrayList<>(Arrays.asList("Escola x", "Escola y", "Escola z"))));
         adapter.addSection(new RankingSection("Piores Escolas avaliadas", new ArrayList<>(Arrays.asList("Escola a", "Escola b", "Escola c"))));

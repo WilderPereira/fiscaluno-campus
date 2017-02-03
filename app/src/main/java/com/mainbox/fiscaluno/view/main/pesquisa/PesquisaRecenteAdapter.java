@@ -28,7 +28,7 @@ public class PesquisaRecenteAdapter extends RecyclerView.Adapter<PesquisaRecente
     public PesquisaRecenteHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.card_pesquisa_recente, parent, false);
 
-        PesquisaRecenteHolder viewHolder = new PesquisaRecenteHolder(view);
+        PesquisaRecenteHolder viewHolder = new PesquisaRecenteHolder(context, view);
         return viewHolder;
     }
 

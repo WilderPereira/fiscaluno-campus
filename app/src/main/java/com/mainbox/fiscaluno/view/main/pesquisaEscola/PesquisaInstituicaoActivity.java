@@ -22,6 +22,7 @@ public class PesquisaInstituicaoActivity extends AppCompatActivity {
 
     private List<Instituicao> instituicaos;
     private RecyclerView mRecycler;
+    private String bundle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,9 +32,9 @@ public class PesquisaInstituicaoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        Bundle bundle =  getIntent().getExtras();
+        bundle =  getIntent().getExtras().getString("Pesquisa");
         if(!bundle.isEmpty()) {
-            getSupportActionBar().setTitle(bundle.getString("Pesquisa"));
+            getSupportActionBar().setTitle(bundle);
         }
 
         mRecycler = (RecyclerView) findViewById(R.id.rv_lista_escola);
@@ -53,7 +54,7 @@ public class PesquisaInstituicaoActivity extends AppCompatActivity {
         for (int i = 0; i <= 1; i++) {
             Instituicao instituicao = new Instituicao();
             instituicao.setCodigo(i);
-            instituicao.setNome(arr[i]+" ABC");
+            instituicao.setNome(arr[i]+" "+bundle);
 
             instituicaos.add(instituicao);
         }

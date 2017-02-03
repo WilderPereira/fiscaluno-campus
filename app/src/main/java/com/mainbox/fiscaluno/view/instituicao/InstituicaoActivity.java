@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.mainbox.fiscaluno.R;
 import com.mainbox.fiscaluno.model.AvaliacaoProContra;
+import com.mainbox.fiscaluno.model.Instituicao;
 import com.mainbox.fiscaluno.view.main.MainActivity;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class InstituicaoActivity extends AppCompatActivity {
     TextView nomeInstituicaoTv, mediaTv;
     RecyclerView recyclerView;
     NestedScrollView scrollView;
+    Instituicao instituicao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,9 @@ public class InstituicaoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         scrollView.scrollTo(0, 0);
+
+        instituicao = getIntent().getParcelableExtra("instituicao");
+        nomeInstituicaoTv.setText(instituicao.getNome());
 
     }
 

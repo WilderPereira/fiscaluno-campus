@@ -61,13 +61,10 @@ public class PesquisaPrincipalFragment extends Fragment {
             public void onClick(View view) {
 
                 if(validacao()) {
+                    Intent intent = new Intent(getContext(), PesquisaInstituicaoActivity.class);
+                    intent.putExtra("Pesquisa", frm_busca.getText().toString());
                     frm_busca.setText("");
                     frm_localizacao.setText("");
-
-                    Intent intent = new Intent(getContext(), PesquisaInstituicaoActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("Pesquisa", frm_busca.getText().toString());
-                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
 
@@ -95,16 +92,13 @@ public class PesquisaPrincipalFragment extends Fragment {
 
     private void gerarValor() {
         pesquisaRecentes = new ArrayList<>();
-        String[] arr = {"Escola", "Faculdade"};
 
-        for (int i = 0; i <= 1; i++) {
-            PesquisaRecente pesquisaRecente = new PesquisaRecente();
-            pesquisaRecente.setCodigo(i);
-            pesquisaRecente.setBusca(arr[i]+" ABC");
-            pesquisaRecente.setLocal("SP");
+        PesquisaRecente pesquisaRecente = new PesquisaRecente();
+        pesquisaRecente.setCodigo(1);
+        pesquisaRecente.setBusca("ABC");
+        pesquisaRecente.setLocal("SP");
 
-            pesquisaRecentes.add(pesquisaRecente);
-        }
+        pesquisaRecentes.add(pesquisaRecente);
     }
 
     @Override
