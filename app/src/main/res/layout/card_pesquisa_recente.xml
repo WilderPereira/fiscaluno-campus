@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/drawable_padding_view"
-            android:src="@drawable/ic_menu_send"
+            android:src="@drawable/ic_search_black_24dp"
             tools:ignore="ContentDescription" />
 
         <LinearLayout
