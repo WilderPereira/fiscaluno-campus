@@ -2,9 +2,11 @@ package com.mainbox.fiscaluno.view.main.pesquisa;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mainbox.fiscaluno.R;
+import com.mainbox.fiscaluno.model.Instituicao;
 import com.mainbox.fiscaluno.model.PesquisaRecente;
 
 /**
