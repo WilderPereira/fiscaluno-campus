@@ -39,7 +39,7 @@ public class PesquisaInstituicaoHolder extends RecyclerView.ViewHolder {
             public void onClick(View v) {
                 Intent intent = new Intent(context, InstituicaoActivity.class);
                 Bundle bundle = new Bundle();
-                //bundle.putParcelable("", instituicaos.get(getAdapterPosition()));
+                bundle.putParcelable("instituicao", instituicaos.get(getAdapterPosition()));
                 intent.putExtras(bundle);
                 context.startActivity(intent);
             }
