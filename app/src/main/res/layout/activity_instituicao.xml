@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mainbox.fiscaluno.view.instituicao.InstituicaoActivity">
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:text="Nome da Instituição"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#181818"
+        />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="#000"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satisfação dos Estudantes"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/colorAccent"
+                    android:layout_margin="4dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <ImageView
+                    android:background="@color/colorAccent"
+                    android:layout_margin="4dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <ImageView
+                    android:background="@color/colorAccent"
+                    android:layout_margin="4dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <ImageView
+                    android:background="@color/colorAccent"
+                    android:layout_margin="4dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <ImageView
+                    android:background="@color/colorAccent"
+                    android:layout_margin="4dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 Avaliações"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/media_tv"
+            android:text="4,2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#181818"
+        />
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="right"
+            android:text="Infraestrutura"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <ImageView
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <ImageView
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <ImageView
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <ImageView
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
